@@ -64,18 +64,32 @@
     color: white;
   }
 
-  /* タイトル色（ここが重要） */
+ /* --- ここから貼り付け --- */
+  /* タイトル色：グレーに変更して白影をつける */
   header h1 {
     font-size: 40px;
-    color: white;
+    color: #444444; /* 濃いグレー */
+    text-shadow: 2px 2px 3px white, -2px -2px 3px white, 2px -2px 3px white, -2px 2px 3px white;
+    margin-bottom: 5px;
   }
 
-  /* スマホ対応 */
+  header p {
+    color: #555555; /* サブタイトルもグレーに */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+    margin-top: 0;
+  }
+
+  /* スマホ対応の調整 */
   @media (max-width: 600px) {
     header h1 {
-      font-size: 20px;
+      font-size: 26px; /* スマホで少し大きく見やすく */
     }
-
+    
+    header {
+      padding: 40px 15px;
+    }
+  /* --- ここまで --- */
     nav {
       flex-direction: column;
     }
