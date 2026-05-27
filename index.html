@@ -2,9 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
- <title>大和市エアコン・宮原電気工事</title>
+  <title>大和市エアコン・宮原電気工事</title>
   <meta name="description" content="神奈川県大和市を中心に、エアコン工事・専用回路増設・コンセント増設などの電気工事を承ります。">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <style>
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -54,7 +55,46 @@
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    Line-height: 1.6;
+    line-height: 1.6;
+  }
+
+  /* 料金表用の追加スタイル */
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+
+  .price-table tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .price-table td {
+    padding: 10px 5px;
+  }
+
+  .price-right {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  /* ご依頼の流れ用の追加スタイル */
+  .flow-step {
+    border-left: 3px solid #007BFF;
+    padding-left: 15px;
+    margin: 20px 0;
+  }
+
+  .flow-step h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+
+  .flow-step p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #555;
   }
 
   footer {
@@ -64,7 +104,6 @@
     color: white;
   }
 
- /* --- ここから貼り付け --- */
   /* タイトル色：グレーに変更して白影をつける */
   header h1 {
     font-size: 40px;
@@ -89,13 +128,14 @@
     header {
       padding: 40px 15px;
     }
-  /* --- ここまで --- */
+
     nav {
       flex-direction: column;
     }
 
     nav a {
       border-top: 1px solid #555;
+      text-align: center;
     }
   }
 </style>
@@ -112,6 +152,8 @@
 <nav>
   <a href="#about">会社概要</a>
   <a href="#service">施工内容</a>
+  <a href="#price">料金目安</a>
+  <a href="#flow">ご依頼の流れ</a>
   <a href="#contact">お問い合わせ</a>
 </nav>
 
@@ -121,31 +163,80 @@
   <h2>会社概要</h2>
   <div class="card">
     <p>神奈川県知事許可 登録電気工事業者 第20265048号 </p>
-    <p>会社は大和市内です、お気軽にお問合せください。
-
-</p>
+    <p>会社は大和市内です、お気軽にお問合せください。</p>
   </div>
 </section>
 
 <section id="service">
   <h2>施工内容</h2>
   <div class="card">・エアコン工事<br>
-
 　(お客様がネットなどで購入されたエアコン工事をいたします)
-</div>
+  </div>
   <div class="card">・照明交換</div>
   <div class="card">・コンセントの増設<br>
-
   ・エアコンなどの専用回路の増設、100V→200V切替など</div>
+</section>
+
+<section id="price">
+  <h2>料金目安</h2>
+  <div class="card">
+    <p style="margin-top: 0; font-size: 0.9em; color: #666;">※料金はすべて税込表記です。建物の状況や配管の長さにより変動するため、正式な金額は現地確認後にお見積りいたします（お見積り無料）。</p>
+    <table class="price-table">
+      <tr>
+        <td>エアコン取付工事（標準）</td>
+        <td class="price-right">16,500円〜</td>
+      </tr>
+      <tr>
+        <td>エアコン取外工事</td>
+        <td class="price-right">5,500円〜</td>
+      </tr>
+      <tr>
+        <td>コンセント増設・交換</td>
+        <td class="price-right">5,500円〜</td>
+      </tr>
+      <tr>
+        <td>専用回路増設（露出・隠蔽）</td>
+        <td class="price-right">16,500円〜</td>
+      </tr>
+      <tr>
+        <td>電圧切替（100V ⇄ 200V）</td>
+        <td class="price-right">3,300円〜</td>
+      </tr>
+    </table>
+    <p style="margin-bottom: 0; font-size: 0.9em; color: #666; margin-top: 15px;">※上記以外の電気工事もお気軽にご相談ください。不動産管理会社様やリフォーム業者様からのスポット依頼も歓迎いたします。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>ご依頼の流れ</h2>
+  <div class="card">
+    <div class="flow-step">
+      <h3>1. お問い合わせ</h3>
+      <p>メール、LINE、またはX（旧Twitter）よりお気軽にご連絡ください。工事内容やエアコンの型番などがお分かりでしたら併せてお知らせいただけますとスムーズです。</p>
+    </div>
+    
+    <div class="flow-step">
+      <h3>2. 状況確認・お見積り</h3>
+      <p>メッセージにて状況を確認させていただき、概算の金額をお伝えします。複雑な工事の場合は、事前に現地調査（無料）をさせていただき、正確なお見積りを提示いたします。</p>
+    </div>
+    
+    <div class="flow-step">
+      <h3>3. 日程調整・施工</h3>
+      <p>お見積りにご納得いただけましたら、施工日を決定します。当日は丁寧かつ迅速に、安全第一で作業を行います。</p>
+    </div>
+    
+    <div class="flow-step">
+      <h3>4. 完了・お支払い</h3>
+      <p>工事完了後、動作確認を一緒に行っていただき、問題がなければお支払いとなります。</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
   <h2>お問い合わせ</h2>
   <div class="card">
     <p>Email: miyahara.yos@gmail.com</p>
-    <p>LINE: <a href="https://line.me/ti/p/wpj3JvzMCb" target="_blank">
-      LINEでお問合せ
-    </a></p>
+    <p>LINE: <a href="https://line.me/ti/p/wpj3JvzMCb" target="_blank">LINEでお問合せ</a></p>
     <p>X: <a href="https://x.com/miyaharadenko" target="_blank">こちら</a></p>
   </div>
 </section>
