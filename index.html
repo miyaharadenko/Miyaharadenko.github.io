@@ -171,17 +171,32 @@
   </div>
 </section>
 
-<!-- ★ここから新しく「施工実績（写真）」のコーナーを追加 -->
+<!-- ★ここから施工実績（写真2枚用）に差し替え -->
 <section id="gallery">
   <h2>施工実績</h2>
-  <div class="card" style="text-align: center;">
-    <!-- 横幅をいっぱい（100%）にしつつ、最大でも500pxに収まるようにしてスマホでも綺麗に見えるように調整しています -->
-    <img src="sekou.jpg" alt="エアコン施工実績" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin-bottom: 10px;">
-    <p style="margin: 0; font-size: 0.95em; color: #555; font-weight: bold;">丁寧な配管化粧カバー施工、真空引きを徹底しております</p>
+  <div class="card">
+    <!-- 写真を横並び（スマホでは縦）にするための囲み -->
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+      
+      <!-- 1枚目の写真 -->
+      <div style="flex: 1; min-width: 250px; max-width: 380px; text-align: center;">
+        <img src="sekou1.jpg" alt="エアコン施工実績1" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #555; font-weight: bold;">室内機設置（丁寧な水平確認）</p>
+      </div>
+
+      <!-- 2枚目の写真 -->
+      <div style="flex: 1; min-width: 250px; max-width: 380px; text-align: center;">
+        <img src="sekou2.jpg" alt="エアコン施工実績2" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #555; font-weight: bold;">室外機設置（配管化粧カバー施工）</p>
+      </div>
+
+    </div>
+    <p style="text-align: center; margin: 15px 0 0 0; font-size: 0.95em; color: #333; border-top: 1px dashed #ddd; padding-top: 10px;">
+      見た目の美しさはもちろん、長く安心してお使いいただけるよう真空引き・接地工事を徹底しております。
+    </p>
   </div>
 </section>
-<!-- ここまで差し替え・追加 -->
-
+<!-- ★ここまで差し替え -->
 <section id="service">
   <h2>施工内容</h2>
   <!-- ★お客様が調べるお悩みワードを意識して文章を肉付けしました -->
