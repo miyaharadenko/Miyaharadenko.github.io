@@ -264,15 +264,21 @@
   </div>
 </section>
 
+<!-- ★ここからお問い合わせ（四角い写真バージョン） -->
 <section id="contact">
   <h2>お問い合わせ</h2>
   <div class="card">
+    <!-- 写真と文字をスマホでも綺麗に並べるための設定 -->
     <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center;">
       
+      <!-- お問い合わせ用の写真（四角い枠に変更しました） -->
       <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center;">
-        <img src="contact.jpg" alt="お問い合わせ窓口" style="width: 100%; height: auto; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.15);">
+        <div style="width: 100%; aspect-ratio: 1/1; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.15); overflow: hidden; background: #eee; display: flex; align-items: center; justify-content: center;">
+          <img src="contact.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
       </div>
 
+      <!-- お問い合わせの連絡先文字 -->
       <div style="flex: 2; min-width: 200px;">
         <p style="margin-top: 0; font-weight: bold; color: #333;">お見積りは無料です！お気軽にご相談ください。</p>
         <p style="margin: 5px 0;"><strong>Email:</strong> miyahara.yos@gmail.com</p>
@@ -283,6 +289,7 @@
     </div>
   </div>
 </section>
+<!-- ★ここまで差し替え -->
 </div>
 
 <footer>
